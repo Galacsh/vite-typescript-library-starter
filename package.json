@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "name": "@galacsh/vtls",
+  "description": "Vite + Typescript library starter.",
+  "version": "0.0.1",
+  "author": "Galacsh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_NAME/REPOSITORY.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_NAME/REPOSITORY/issues"
+  },
+  "keywords": [
+    "vite",
+    "typescript"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build:only": "tsc && vite build",
+    "test": "vitest"
+  },
+  "type": "module",
+  "main": "./dist/vtls.umd.cjs",
+  "module": "./dist/vtls.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/vtls.js",
+      "require": "./dist/vtls.umd.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.0",
+    "vitest": "^0.34.6"
+  }
+}
