@@ -46,8 +46,8 @@ Starter that uses [Vite](https://vitejs.dev/) to build a Typescript library. It 
     }
   },
   "lint-staged": {
-    "*.{js,ts}": "eslint --fix",
-    "*.{js,ts,md}": "prettier --write"
+    "*.{js,ts,cjs,mjs,cts,mts}": ["eslint --fix", "prettier --write"],
+    "*.{md,json}": "prettier --write"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
