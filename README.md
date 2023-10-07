@@ -26,10 +26,11 @@ Starter that uses [Vite](https://vitejs.dev/) to build a Typescript library. It 
   "scripts": {
     "dev": "vite",
     "test": "vitest",
-    "test:once": "vitest run",
-    "build:only": "tsc && vite build",
     "build": "npm run test:once && npm run build:only",
-    "lint": "eslint --fix . && prettier --write .",
+    "test:once": "vitest run",
+    "build:only": "npm run lint && vite build",
+    "lint": "tsc && eslint .",
+    "format": "prettier --write .",
     "prepare": "husky install",
     "commitlint": "commitlint --edit"
   },
