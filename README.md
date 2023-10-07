@@ -30,7 +30,8 @@ Starter that uses [Vite](https://vitejs.dev/) to build a Typescript library. It 
     "build:only": "tsc && vite build",
     "build": "npm run test:once && npm run build:only",
     "lint": "eslint --fix . && prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commitlint": "commitlint --edit"
   },
   "type": "module",
   "main": "./dist/LIB_NAME.umd.cjs",
@@ -48,6 +49,8 @@ Starter that uses [Vite](https://vitejs.dev/) to build a Typescript library. It 
     "*.{js,ts,md}": "prettier --write"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
     "@types/node": "^20.8.2",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
@@ -67,4 +70,9 @@ Starter that uses [Vite](https://vitejs.dev/) to build a Typescript library. It 
 
 ## Reference
 
-https://onderonur.netlify.app/blog/creating-a-typescript-library-with-vite/
+1. [Creating a Typescript library with Vite](https://onderonur.netlify.app/blog/creating-a-typescript-library-with-vite/)
+2. [Prettier installation](https://prettier.io/docs/en/install)
+3. [ESLint installation](https://eslint.org/docs/user-guide/getting-started)
+4. [Husky](https://typicode.github.io/husky/)
+5. [Lint staged](https://github.com/okonet/lint-staged)
+6. [commitlint local setup](https://commitlint.js.org/#/guides-local-setup)
